@@ -30,6 +30,7 @@ header .header-nav{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .header-nav .nav--marca{
@@ -48,8 +49,8 @@ header .header-nav{
 .header-nav .header-nav-menu{
     display: inline-flex;
     list-style: none;
-    gap: 25px;
-    margin: 20px auto;
+    gap: 30px;
+    margin: 20px;
 }
 
 .header-nav .header-nav-menu .nav-menu--element a{
@@ -152,6 +153,25 @@ main .proyectos{
     width: 100%;
     height: auto;
     background-color: var(--gray);
+    box-shadow: 1px 3px 10px black;
+    margin: 20px 0;
+}
+
+.proyectos .proyectos-texto{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.texto-seccion h2{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: bold;
+    border-bottom: 2px solid white;
 }
 
 .proyectos .cards-container{
@@ -218,4 +238,54 @@ main .proyectos{
     background-position: center;
     fill: white;
     margin: 0 10px;
+}
+
+/*Skills*/
+
+.skills{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+.skills .skills-text{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.skills .skills-text h2{
+    color: black;
+    font-size: 2.8rem;
+    border-bottom: 2px solid black;
+}
+
+.skills .cards-skills{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .cards-skills .card{
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-skills .card .card-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cards-skills .card .img-css{
+    width: 93px;
+    height: 125px;
 }
