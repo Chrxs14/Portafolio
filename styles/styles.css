@@ -68,7 +68,7 @@ header .header-nav{
 header .header-main-content{
     width: 100%;
     height: 500px;
-    background-image: url('../assets/img/dev-dots\ \(copia\).png');
+    background-image: url('https://i.ibb.co/5B5wgzJ/dev-dots-copia.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -183,7 +183,8 @@ main .proyectos{
 }
 
 .proyectos .cards-container .proyecto{
-    width: 275px;
+    width: 90%;
+    max-width: 350px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -221,7 +222,7 @@ main .proyectos{
 .proyectos .enlaces .enlace{
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: 'Noto Sans Mono', monospace;
     font-weight: bold;
     color: #c9cacc;
@@ -288,4 +289,70 @@ main .proyectos{
 .cards-skills .card .img-css{
     width: 93px;
     height: 125px;
+}
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--gray);
+    box-shadow: 1px 3px 10px black;
+}
+
+footer .card-footer{
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 20px;
+}
+footer .titulo-footer{
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.texto-footer{
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    color: white;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.social ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social ul li{
+    margin: 0 10px;
+}
+
+.social ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media-img{
+    width: 25px;
+    height: 25px;
+}
+
+@media (min-width: 426px) {
+    .header-main-content .content-text h1{
+        font-size: 3rem;
+    }
+    .header-main-content .content-text p{
+        font-size: 1.7rem;
+        width: 300px;
+    }
 }
