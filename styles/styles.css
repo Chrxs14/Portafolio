@@ -61,10 +61,6 @@ header .header-nav{
     color: white;
 }
 
-.header-nav .header-nav-menu .nav-menu--element .active{
-    border-bottom: 2px solid white;
-}
-
 header .header-main-content{
     width: 100%;
     height: 500px;
@@ -177,14 +173,14 @@ main .proyectos{
 .proyectos .cards-container{
     width: 100%;
     padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 500px));
+    gap: 30px;
+    place-content: center;
 }
 
 .proyectos .cards-container .proyecto{
-    width: 90%;
-    max-width: 350px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -195,10 +191,27 @@ main .proyectos{
 }
 
 .cards-container .proyecto img{
-    width: 250px;
-    height: 150px;
-    margin: 20px auto;
+    width: 90%;
+    min-width: 250px;
+    height: 65%;
+    margin: 20px;
     border-radius: 10px;
+    align-self: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img1{
+    background-image: url('https://i.ibb.co/M1GPH85/Captura-de-pantalla-de-2021-10-20-14-33-31.png');
+}
+
+.img2{
+    background-image: url('https://i.ibb.co/swfzhd0/skweb.png');
+}
+
+.img3{
+    background-image: url('./assets/img/online-web-design.jpg');
 }
 
 .cards-container .proyecto p{
@@ -206,7 +219,7 @@ main .proyectos{
     font-size: 2.2rem;
     font-family: 'Noto Sans Mono', monospace;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 20px;
     color: whitesmoke;
 }
 
@@ -345,6 +358,12 @@ footer .titulo-footer{
 .social-media-img{
     width: 25px;
     height: 25px;
+}
+
+@media (max-width: 1009px){
+    .proyectos .cards-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+    }
 }
 
 @media (min-width: 426px) {
