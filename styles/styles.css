@@ -193,61 +193,58 @@ main .proyectos{
     width: 100%;
     padding: 10px;
     display: grid;
-    /* grid-template-columns: repeat(auto, minmax(300px, 500px)); */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 30px;
     align-content: center;
     justify-content: center;
 }
 
 .proyectos .cards-container .proyecto{
-    width: 100%;
-    height: 325px;
     display: flex;
-    background-color: #525252;
-    margin: 20px auto;
-    border-radius: 10px;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    box-shadow:
-  5.1px 3.1px 39.2px rgba(0, 0, 0, 0.087),
-  14px 8.6px 54.4px rgba(0, 0, 0, 0.125),
-  33.8px 20.8px 61.1px rgba(0, 0, 0, 0.163),
-  112px 69px 98px rgba(0, 0, 0, 0.25);
-}
-
-.cards-container .proyecto .img{
-    width: 90%;
-    height: 70%;
-    min-width: 250px;
-    margin: 20px;
-    border-radius: 10px;
-    align-self: center;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.img1{
-    background-image: url('https://i.ibb.co/M1GPH85/Captura-de-pantalla-de-2021-10-20-14-33-31.png');
-}
-
-.img2{
-    background-image: url('https://i.ibb.co/swfzhd0/skweb.png');
-}
-
-.img3{
-    background-image: url('../assets/img/online-web-design.jpg');
-}
-
-.cards-container .proyecto p{
+    gap: 20px;
     width: auto;
     height: auto;
-    font-size: 2.2rem;
-    font-family: 'Noto Sans Mono', monospace;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5.1px 3.1px 39.2px rgba(0, 0, 0, 0.087), 
+    14px 8.6px 54.4px rgba(0, 0, 0, 0.125),
+    33.8px 20.8px 61.1px rgba(0, 0, 0, 0.163), 
+    112px 69px 98px rgba(0, 0, 0, 0.25);
+}
+
+.proyectos .cards-container .proyecto .img-proyect{
+    width: 100%;
+    max-width: 365px;
+    border-radius: 10px;
+    box-shadow:
+  1.4px 1.4px 6px rgba(0, 0, 0, 0.44),
+  3.8px 4px 16.7px rgba(0, 0, 0, 0.316),
+  9px 9.6px 40.1px rgba(0, 0, 0, 0.275),
+  30px 32px 133px rgba(0, 0, 0, 0.225)
+;
+}
+
+.proyectos .cards-container .proyecto .text-proyect{
+    width: 100%;
+    max-width: 365px;
+    align-self: center;
+    margin: 10px 0;
+}
+.proyectos .cards-container .proyecto .text-proyect h3{
+    margin-left: 20px;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    color: whitesmoke;
-    margin-bottom: 20px;
+    color: #fff;
+}
+
+.proyectos .cards-container .proyecto .text-proyect p{
+    margin-top: 5px;
+    font-size: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    color: #bdc3c7;
 }
 
 .proyectos .enlaces{
@@ -257,6 +254,7 @@ main .proyectos{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .proyectos .enlaces .enlace{
