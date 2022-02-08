@@ -128,9 +128,10 @@ main .about-me{
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin: 30px 0;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
 }
 
 .about-me .me-img-container .me-img{
@@ -141,13 +142,15 @@ main .about-me{
 }
 
 .about-me .about-me-text{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin: 20px 0;
+    margin: 30px;
 }
 
 .about-me-text h2{
+    align-self: center;
     font-size: 2.5rem;
-    text-align: center;
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 1.8rem;
     margin-bottom: 10px;
@@ -156,10 +159,30 @@ main .about-me{
 
 .about-me-text p{
     font-size: 1.8rem;
-    text-align: center;
-    margin: 10px 10px;
+    margin: 20px 0;
+    text-align: justify;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    color: var(--gray);
+}
+
+.about-me .about-me-text .cv{
+    width: 125px;
+    padding: 10px;
+    align-self: center;
+    border: 1px solid var(--gray);
+    background-color: var(--gray);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.about-me .about-me-text .cv:hover{
+    background-color: white;
     color: var(--gray);
 }
 
@@ -391,7 +414,23 @@ footer .titulo-footer{
     }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 750px) {
+    .about-me{
+        gap: 20px;
+        align-items: center;
+    }
+    .about-me .about-me-text{
+        width: 50%;
+        padding: 0 5px;
+    }
+
+    .about-me .about-me-text h2{
+        align-self: flex-start;
+    }
+
+    .about-me .about-me-text .cv{
+        align-self: flex-start;
+    }
     .header-main-content .content-text h1{
         font-size: 3rem;
     }
