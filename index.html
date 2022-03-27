@@ -1,130 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/ico/home-solid.svg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/ico/home-solid.svg" />
     <title>Christopher Ochoa | HOME</title>
-</head>
-<body>
+  </head>
+  <body id="root">
     <header>
-        <nav class="header-nav">
-            <span class="nav--marca">Christopher Ochoa</span>
-            <ul class="header-nav-menu">
-                <li class="nav-menu--element"><a href="index.html">Home</a></li>
-                <li class="nav-menu--element"><a href="#proyectos">Proyectos</a></li>
-                <li class="nav-menu--element"><a href="#skills">Skills</a></li>
-            </ul>
-        </nav>
-        <div class="header-main-content">
-            <div class="content-text">
-                <h1>Frontend Developer</h1>
-                <p>portafolio de proyectos personales</p>
-            </div>
+      <nav id="headerNav" class="header-nav">
+        <span class="nav--marca">Christopher Ochoa</span>
+        <ul class="header-nav-menu">
+          <li class="nav-menu--element"><a href="index.html">Home</a></li>
+          <li class="nav-menu--element"><a href="#proyectos">Proyectos</a></li>
+          <li class="nav-menu--element"><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+      <nav id="headerNavObserve" class="header-nav header-navObserve">
+        <span class="nav--marca">Christopher Ochoa</span>
+        <ul class="header-nav-menu">
+          <li class="nav-menu--element"><a href="index.html">Home</a></li>
+          <li class="nav-menu--element"><a href="#proyectos">Proyectos</a></li>
+          <li class="nav-menu--element"><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+      <div class="header-main-content">
+        <div class="content-text">
+          <h1>Frontend Developer</h1>
+          <p>portafolio de proyectos personales</p>
         </div>
+      </div>
     </header>
     <main>
-        <section class="about-me">
-            <figure class="me-img-container">
-                <img src="https://i.ibb.co/YfcQyX8/1615923586184.jpg" alt="Foto de Christopher" class="me-img">
-            </figure>
-            <div class="about-me-text">
-                <h2>Sobre mi</h2>
-                <p>
-                    Hola soy Christopher, un Desarrollador Frontend junior y estudiante autodidacta de desarrollo web. He obtenido mi
-                    conocimiento gracias al contenido que me encontraba en internet y así he podido ir practicando haciendo proyectos 
-                    personales y de esta manera mejorando mis habilidades en tecnologías de desarrollo web.
-                </p>
-                <a class="cv" href="./assets/ChristopherOchoa.pdf" target="_blank">
-                    Hoja de vida
-                </a>
+      <section class="about-me">
+        <figure class="me-img-container">
+          <img
+            src="https://i.ibb.co/YfcQyX8/1615923586184.jpg"
+            alt="Foto de Christopher"
+            class="me-img"
+          />
+        </figure>
+        <div class="about-me-text">
+          <h2>Sobre mi</h2>
+          <p>
+            Hola soy Christopher, un Desarrollador Frontend junior y estudiante
+            autodidacta de desarrollo web. He obtenido mi conocimiento gracias
+            al contenido que me encontraba en internet y así he podido ir
+            practicando haciendo proyectos personales y de esta manera mejorando
+            mis habilidades en tecnologías de desarrollo web.
+          </p>
+          <a class="cv" href="./assets/ChristopherOchoa.pdf" target="_blank">
+            Hoja de vida
+          </a>
+        </div>
+      </section>
+      <section class="proyectos" id="proyectos">
+        <div class="proyectos-texto texto-seccion">
+          <h2>Mis Proyectos</h2>
+        </div>
+        <div class="cards-container">
+          <a
+            href="https://chrxs14.github.io/batatabit-practica-platzi/"
+            target="_blank"
+            class="proyecto"
+          >
+            <!-- <div alt="" class="img1 img"></div> -->
+            <img
+              class="img-proyect"
+              src="./assets/img/batatabit.png"
+              alt="imagen proyecto 1"
+            />
+            <div class="text-proyect">
+              <h3>Batatabit</h3>
+              <p>
+                Proyecto que forma parte de mi formación en el curso de Platzi
+                "Maquetacion Mobile First".
+              </p>
             </div>
-        </section>
-        <section class="proyectos" id="proyectos">
-            <div class="proyectos-texto texto-seccion">
-                <h2>Mis Proyectos</h2>
+          </a>
+          <a
+            href="https://chrxs14.github.io/50-proyectos-en-50-dias/"
+            target="_blank"
+            class="proyecto"
+          >
+            <!-- <div alt="" class="img1 img"></div> -->
+            <img
+              class="img-proyect"
+              src="./assets/img/50projects.png"
+              alt="imagen proyecto 1"
+            />
+            <div class="text-proyect">
+              <h3>50 Proyectos en 50 dias</h3>
+              <p>
+                Reto de Brad Traversy y Florin Pop para practicar mis
+                habilidades en HTML, CSS y Javascript. Aún no está completo,
+                pero voy avanzando poco a poco.
+              </p>
             </div>
-            <div class="cards-container">
-                <a href="https://chrxs14.github.io/batatabit-practica-platzi/" target="_blank" class="proyecto">
-                    <!-- <div alt="" class="img1 img"></div> -->
-                    <img class="img-proyect" src="./assets/img/batatabit.png" alt="imagen proyecto 1">
-                    <div class="text-proyect">
-                        <h3>Batatabit</h3>
-                        <p>
-                            Proyecto que forma parte de mi formación en el curso de Platzi "Maquetacion Mobile First".
-                        </p>
-                    </div>
-                </a>
-                <a href="https://chrxs14.github.io/50-proyectos-en-50-dias/" target="_blank" class="proyecto">
-                    <!-- <div alt="" class="img1 img"></div> -->
-                    <img class="img-proyect" src="./assets/img/50projects.png" alt="imagen proyecto 1">
-                    <div class="text-proyect">
-                        <h3>50 Proyectos en 50 dias</h3>
-                        <p>
-                            Reto de Brad Traversy y Florin Pop para practicar mis habilidades en HTML, CSS y 
-                            Javascript. Aún no está completo, pero voy avanzando poco a poco.
-                        </p>
-                    </div>
-                </a>
-                <a href="https://chrxs14.github.io/proyecto-aguacate/" target="_blank" class="proyecto">
-                    <!-- <div alt="" class="img1 img"></div> -->
-                    <img class="img-proyect" src="./assets/img/proyectoAguacate.png" alt="imagen proyecto 1">
-                    <div class="text-proyect">
-                        <h3>Menú de Aguacates</h3>
-                        <p>
-                            Página resultado de mi primer taller en el curso de "Manipulación del DOM" en Platzi, 
-                            implementando asincronismo y solicitud de datos a una API.
-                        </p>
-                    </div>
-                </a>
+          </a>
+          <a
+            href="https://chrxs14.github.io/proyecto-aguacate/"
+            target="_blank"
+            class="proyecto"
+          >
+            <!-- <div alt="" class="img1 img"></div> -->
+            <img
+              class="img-proyect"
+              src="./assets/img/proyectoAguacate.png"
+              alt="imagen proyecto 1"
+            />
+            <div class="text-proyect">
+              <h3>Menú de Aguacates</h3>
+              <p>
+                Página resultado de mi primer taller en el curso de
+                "Manipulación del DOM" en Platzi, implementando asincronismo y
+                solicitud de datos a una API.
+              </p>
             </div>
-            <div class="enlaces">
-                <a href="https://github.com/Chrxs14/" target="_blank" class="enlace">Github <span class="github-ico"></span></a>
-            </div>
-        </section>
-        <section class="skills" id="skills">
-            <div class="skills-text texto-seccion">
-                <h2>Skills</h2>
-            </div>
-            <div class="cards-skills">
-                <div class="card">
-                    <img src="https://i.ibb.co/VNt7WnY/html.png" alt="imagen html" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="https://i.ibb.co/sJQ02TM/css.png" alt="imagen css" class="card-img img-css">
-                </div>
-                <div class="card">
-                    <img src="https://i.ibb.co/zx1ygG2/js.png" alt="imagen java script" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/git.png" alt="imagen git" class="card-img">
-                </div>
-                <div class="card">
-                    <img src="./assets/img/npm.png" alt="imagen git" class="card-img">
-                </div>
-            </div>
-        </section>
+          </a>
+        </div>
+        <div class="enlaces">
+          <a href="https://github.com/Chrxs14/" target="_blank" class="enlace"
+            >Github <span class="github-ico"></span
+          ></a>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="skills-text texto-seccion">
+          <h2>Skills</h2>
+        </div>
+        <div class="cards-skills">
+          <div class="card">
+            <img
+              src="https://i.ibb.co/VNt7WnY/html.png"
+              alt="imagen html"
+              class="card-img"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="https://i.ibb.co/sJQ02TM/css.png"
+              alt="imagen css"
+              class="card-img img-css"
+            />
+          </div>
+          <div class="card">
+            <img
+              src="https://i.ibb.co/zx1ygG2/js.png"
+              alt="imagen java script"
+              class="card-img"
+            />
+          </div>
+          <div class="card">
+            <img src="./assets/img/git.png" alt="imagen git" class="card-img" />
+          </div>
+          <div class="card">
+            <img src="./assets/img/npm.png" alt="imagen git" class="card-img" />
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="social card-footer">
-            <h3 class="titulo-footer">Redes Sociales</h3>
-            <ul>
-                <li>
-                    <a class="linkedin texto-footer" href="https://www.linkedin.com/in/christoper-o/" target="_blank"><img src="./assets/ico/linkedin-ico.png" alt="" class="social-media-img"> Linkedin</a>
-                </li>
-                <li>
-                    <a class="instagram texto-footer" href="https://www.instagram.com/ochoa.christopher/" target="_blank"><img src="./assets/ico/instagram-ico.png" alt="" class="social-media-img"> Instagram</a>
-                </li>
-                <li>
-                    <a class="twiter texto-footer" href="https://twitter.com/ChrisSt03" target="_blank"><img src="./assets/ico/twitter-ico.png" alt="" class="social-media-img"> Twitter</a>
-                </li>
-            </ul>
-        </div>
+      <div class="social card-footer">
+        <h3 class="titulo-footer">Redes Sociales</h3>
+        <ul>
+          <li>
+            <a
+              class="linkedin texto-footer"
+              href="https://www.linkedin.com/in/christoper-o/"
+              target="_blank"
+              ><img
+                src="./assets/ico/linkedin-ico.png"
+                alt=""
+                class="social-media-img"
+              />
+              Linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              class="instagram texto-footer"
+              href="https://www.instagram.com/ochoa.christopher/"
+              target="_blank"
+              ><img
+                src="./assets/ico/instagram-ico.png"
+                alt=""
+                class="social-media-img"
+              />
+              Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="twiter texto-footer"
+              href="https://twitter.com/ChrisSt03"
+              target="_blank"
+              ><img
+                src="./assets/ico/twitter-ico.png"
+                alt=""
+                class="social-media-img"
+              />
+              Twitter</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
