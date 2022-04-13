@@ -1,3 +1,4 @@
+//animation navbar
 const navBar = document.getElementById("headerNav");
 const navBarFixed = document.getElementById("headerNavObserve");
 
@@ -12,3 +13,17 @@ let observer = new IntersectionObserver((entries) => {
 });
 
 const prueba = observer.observe(navBar);
+
+//animation scroll option navbar
+
+const selectores = document.querySelectorAll(".selector");
+
+function selectorScroll(item) {
+  item.preventDefault();
+  const href = this.getAttribute("href");
+  document.querySelector(href).scrollIntoView({
+    behavior: "smooth",
+  });
+}
+
+selectores.forEach((item) => item.addEventListener("click", selectorScroll));
