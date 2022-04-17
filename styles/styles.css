@@ -71,13 +71,19 @@ header .navBar-observe {
   gap: 30px;
   margin: 20px;
 }
-
+.header-nav .header-nav-menu .nav-menu--element {
+  transition: all 0.3s;
+}
 .header-nav .header-nav-menu .nav-menu--element a {
   height: 100%;
   font-family: "Noto Sans Mono", monospace;
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+}
+.header-nav .header-nav-menu .nav-menu--element:hover {
+  transform: scale(1.1);
+  border-bottom: 1px solid white;
 }
 
 header .header-main-content {
@@ -230,7 +236,7 @@ main .proyectos {
   width: 100%;
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
   gap: 30px;
   align-content: center;
   justify-content: center;
@@ -245,19 +251,15 @@ main .proyectos {
   height: auto;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 5.1px 3.1px 39.2px rgba(0, 0, 0, 0.087),
-    14px 8.6px 54.4px rgba(0, 0, 0, 0.125),
-    33.8px 20.8px 61.1px rgba(0, 0, 0, 0.163),
-    112px 69px 98px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .proyectos .cards-container .proyecto .img-proyect {
   width: 100%;
   max-width: 365px;
   border-radius: 10px;
-  box-shadow: 1.4px 1.4px 6px rgba(0, 0, 0, 0.44),
-    3.8px 4px 16.7px rgba(0, 0, 0, 0.316), 9px 9.6px 40.1px rgba(0, 0, 0, 0.275),
-    30px 32px 133px rgba(0, 0, 0, 0.225);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .proyectos .cards-container .proyecto .text-proyect {
