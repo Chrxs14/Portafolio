@@ -1,13 +1,16 @@
 //animation navbar
 const navBar = document.getElementById("headerNav");
 const navBarFixed = document.getElementById("headerNavObserve");
+const goTop = document.querySelector(".goTop");
 
 let observer = new IntersectionObserver((entries) => {
   entries.forEach(() => {
     if (entries[0].isIntersecting) {
       navBarFixed.classList.remove("navBar-observe");
+      goTop.classList.remove("goTopActive");
     } else {
       navBarFixed.classList.add("navBar-observe");
+      goTop.classList.add("goTopActive");
     }
   });
 });

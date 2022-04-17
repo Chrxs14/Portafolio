@@ -234,12 +234,11 @@ main .proyectos {
 
 .proyectos .cards-container {
   width: 100%;
-  padding: 10px;
+  padding: 25px 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 450px));
   gap: 30px;
-  align-content: center;
-  justify-content: center;
+  place-content: center;
 }
 
 .proyectos .cards-container .proyecto {
@@ -253,6 +252,11 @@ main .proyectos {
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: all 0.5s;
+}
+
+.proyectos .cards-container .proyecto:hover {
+  transform: scale(1.02);
 }
 
 .proyectos .cards-container .proyecto .img-proyect {
@@ -439,8 +443,8 @@ footer .titulo-footer {
 .formContact {
   display: flex;
   width: 50%;
-  min-width: 300px;
-  max-width: 500px;
+  min-width: 280px;
+  max-width: 400px;
   flex-direction: column;
   align-items: center;
   padding: 30px 0;
@@ -448,14 +452,14 @@ footer .titulo-footer {
 }
 
 .formContact .label {
-  width: 80%;
+  width: 100%;
   font-size: 1.6rem;
   font-weight: bold;
   color: #fff;
 }
 
 .formContact .input {
-  width: 80%;
+  width: 100%;
   padding: 5px;
   font-size: 1.4rem;
   border-radius: 5px;
@@ -463,8 +467,8 @@ footer .titulo-footer {
   outline: none;
 }
 .formContact .inputTextArea {
-  min-width: 80%;
-  max-width: 80%;
+  min-width: 100%;
+  max-width: 100%;
   min-height: 100px;
 }
 .formContact .buttonSend {
@@ -484,6 +488,31 @@ footer .titulo-footer {
 .formContact .buttonSend:hover {
   background-color: transparent;
   color: white;
+}
+
+.goTop {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  bottom: 25px;
+  right: -50px;
+  background-color: #656565;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.goTop:hover {
+  transform: scale(1.1);
+}
+.goTop .icon {
+  width: 80%;
+  fill: white;
+}
+
+.goTopActive {
+  right: 25px;
 }
 
 @media (max-width: 1009px) {
