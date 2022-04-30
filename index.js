@@ -30,3 +30,19 @@ function selectorScroll(item) {
 }
 
 selectores.forEach((item) => item.addEventListener("click", selectorScroll));
+
+//more content
+const containerProyectos = document.getElementById("proyectos");
+const buttonMore = document.querySelector(".more");
+buttonMore.addEventListener("click", () => {
+  console.log(containerProyectos.classList);
+  if (containerProyectos.classList.contains("moreContent")) {
+    console.log(true);
+    containerProyectos.classList.remove("moreContent");
+    buttonMore.innerHTML = "Mostrar Mas>>";
+  } else {
+    console.log(false);
+    containerProyectos.classList.add("moreContent");
+    buttonMore.innerHTML = "Mostrar Menos<<";
+  }
+});

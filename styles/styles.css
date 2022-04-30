@@ -210,10 +210,10 @@ main .about-me {
 /*Proyectos*/
 main .proyectos {
   width: 100%;
-  height: auto;
   background-color: var(--gray);
   box-shadow: 1px 3px 10px black;
   margin: 20px 0;
+  padding: 10px 20px;
 }
 
 .proyectos .proyectos-texto {
@@ -234,26 +234,27 @@ main .proyectos {
 }
 
 .proyectos .cards-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  padding: 25px 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 450px));
-  gap: 30px;
-  place-content: center;
+  justify-content: center;
+  gap: 25px;
 }
 
 .proyectos .cards-container .proyecto {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
-  width: auto;
-  height: auto;
+  width: 100%;
+  min-width: 280px;
+  max-width: 450px;
   border-radius: 10px;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  transition: all 0.5s;
+  transition: transform 0.5s;
 }
 
 .proyectos .cards-container .proyecto:hover {
@@ -290,12 +291,10 @@ main .proyectos {
 
 .proyectos .enlaces {
   width: 100%;
-  height: 30px;
+  height: auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .proyectos .enlaces .enlace {
@@ -305,7 +304,6 @@ main .proyectos {
   font-family: "Noto Sans Mono", monospace;
   font-weight: bold;
   color: #c9cacc;
-  margin-bottom: 20px;
 }
 
 .proyectos .enlaces .enlace .github-ico {
@@ -318,6 +316,13 @@ main .proyectos {
   background-position: center;
   fill: white;
   margin: 0 10px;
+}
+
+.proyectos .enlaces .more {
+  background-color: #656565;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /*Skills*/
