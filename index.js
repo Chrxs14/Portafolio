@@ -6,10 +6,8 @@ const goTop = document.querySelector(".goTop");
 let observer = new IntersectionObserver((entries) => {
   entries.forEach(() => {
     if (entries[0].isIntersecting) {
-      navBarFixed.classList.remove("navBar-observe");
       goTop.classList.remove("goTopActive");
     } else {
-      navBarFixed.classList.add("navBar-observe");
       goTop.classList.add("goTopActive");
     }
   });
@@ -17,7 +15,7 @@ let observer = new IntersectionObserver((entries) => {
 
 const prueba = observer.observe(navBar);
 
-//animation scroll option navbar
+// animation scroll option navbar
 
 const selectores = document.querySelectorAll(".selector");
 
@@ -31,18 +29,16 @@ function selectorScroll(item) {
 
 selectores.forEach((item) => item.addEventListener("click", selectorScroll));
 
-//more content
-const containerProyectos = document.getElementById("proyectos");
-const buttonMore = document.querySelector(".more");
-buttonMore.addEventListener("click", () => {
-  console.log(containerProyectos.classList);
-  if (containerProyectos.classList.contains("moreContent")) {
-    console.log(true);
-    containerProyectos.classList.remove("moreContent");
-    buttonMore.innerHTML = "Mostrar Mas>>";
+let ubicacionPrincipal = window.pageYOffset;
+window.onscroll = () => {
+  const headerScroll = document.querySelector("#headerNav");
+  let desplazamiento = window.pageYOffset;
+
+  console.log(window.pageYOffset);
+  if (ubicacionPrincipal >= desplazamiento) {
+    headerScroll.style.top = "0";
   } else {
-    console.log(false);
-    containerProyectos.classList.add("moreContent");
-    buttonMore.innerHTML = "Mostrar Menos<<";
+    headerScroll.style.top = "-200px";
   }
-});
+  ubicacionPrincipal = desplazamiento;
+};
